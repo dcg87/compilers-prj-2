@@ -1,0 +1,7 @@
+program main;
+var a : integer;
+var b : boolean;
+begin
+a == b;
+
+end.

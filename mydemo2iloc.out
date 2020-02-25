@@ -1,0 +1,25 @@
+
+     CS415 Spring 2018 Compiler
+
+1	program main;
+2	var a, b, c: boolean;
+3	begin
+4	  a := true;
+5	  b := false;
+6	  print(a);
+7	  print(b);
+8	  c := a or b;
+9	  print(c);
+10	  c := a and b;
+11	  print(c)
+12	end.
+
+
+ --- Symbol Table ---------------
+
+	 SCALAR "a" of type boolean with offset 0, category 0, and size=1
+	 SCALAR "b" of type boolean with offset 4, category 0, and size=1
+	 SCALAR "c" of type boolean with offset 8, category 0, and size=1
+
+ --------------------------------
+

@@ -1,0 +1,6 @@
+program main;
+var a :  boolean;
+    b : integer;
+begin
+print(a)
+end.

@@ -1,0 +1,40 @@
+Binary file codegen matches
+instrutil.c:emitComment(char *comment)
+instrutil.c:/* emits a line of code */
+instrutil.c:emit(int label_index,
+instrutil.c:      fprintf(stderr, "Illegal instruction in \"emit\" \n");
+instrutil.h:void emitComment(char *comment);
+instrutil.h:void emit(int label_index, 
+Binary file instrutil.o matches
+parse.tab.c:    {emitComment("Assign STATIC_AREA_ADDRESS to register \"r0\"");
+parse.tab.c:           emit(NOLABEL, LOADI, STATIC_AREA_ADDRESS, 0, EMPTY);}
+parse.tab.c:	                         emitComment(CommentBuffer);
+parse.tab.c:                                 emit(NOLABEL, STOREAI, (yyvsp[-1].targetReg).targetRegister, 0, printOffset);
+parse.tab.c:                                 emit(NOLABEL, 
+parse.tab.c:				  emit(NOLABEL,
+parse.tab.c:				  emit(NOLABEL, LOADI, offset, newReg1, EMPTY);
+parse.tab.c:				  emit(NOLABEL, ADD, 0, newReg1, newReg2);
+parse.tab.c:                                  emit(NOLABEL, 
+parse.tab.c:                                  emit(NOLABEL, 
+parse.tab.c:                                  emit(NOLABEL, 
+parse.tab.c:				  emit(NOLABEL, LOADAI, 0, offset, newReg);
+parse.tab.c:				   emit(NOLABEL, LOADI, (yyvsp[0].token).num, newReg, EMPTY); }
+parse.tab.c:				   emit(NOLABEL, LOADI, 1, newReg, EMPTY); }
+parse.tab.c:				   emit(NOLABEL, LOADI, 0, newReg, EMPTY); }
+Binary file parse.tab.o matches
+parse.y:program : {emitComment("Assign STATIC_AREA_ADDRESS to register \"r0\"");
+parse.y:           emit(NOLABEL, LOADI, STATIC_AREA_ADDRESS, 0, EMPTY);} 
+parse.y:	                         emitComment(CommentBuffer);
+parse.y:                                 emit(NOLABEL, STOREAI, $3.targetRegister, 0, printOffset);
+parse.y:                                 emit(NOLABEL, 
+parse.y:				  emit(NOLABEL,
+parse.y:				  emit(NOLABEL, LOADI, offset, newReg1, EMPTY);
+parse.y:				  emit(NOLABEL, ADD, 0, newReg1, newReg2);
+parse.y:                                  emit(NOLABEL, 
+parse.y:                                  emit(NOLABEL, 
+parse.y:                                  emit(NOLABEL, 
+parse.y:				  emit(NOLABEL, LOADAI, 0, offset, newReg);
+parse.y:				   emit(NOLABEL, LOADI, $1.num, newReg, EMPTY); }
+parse.y:				   emit(NOLABEL, LOADI, 1, newReg, EMPTY); }
+parse.y:				   emit(NOLABEL, LOADI, 0, newReg, EMPTY); }
+Binary file sol-codegen matches

@@ -1,0 +1,6 @@
+program main;
+var a,b,c,d,e,f,g,h :  integer;
+begin
+print(a);
+print(b)
+end.

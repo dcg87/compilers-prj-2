@@ -1,0 +1,7 @@
+program main;
+var a :  boolean;
+begin
+a := true;
+a := false
+a := 5
+end.

@@ -1,0 +1,4 @@
+program main;
+var a : integer;
+begin
+end.

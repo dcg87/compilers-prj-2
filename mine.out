@@ -1,0 +1,23 @@
+
+     CS415 Spring 2018 Compiler
+
+1	program main;
+2	var a, b: integer;
+3	begin
+4	  a := 1;
+5	  b := 2;
+6	  a :=*** WARNING *** in function "insert": a has already an entry
+ a + b;
+7	  print(a);
+8	  print(5)
+9	end.
+
+
+ --- Symbol Table ---------------
+
+	 "a" of type integer with offset 0
+	 "b" of type integer with offset 16
+	 "a" of type integer with offset 32
+
+ --------------------------------
+
